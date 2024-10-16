@@ -12,24 +12,24 @@ import Estructuras.Queue;
  */
 public class Funciones {
     
-    private Queue cola1Nintendo;
-    private Queue cola2Nintendo;
-    private Queue cola3Nintendo;
-    private Queue refuerzoNintendo;
-    private Queue cola1Capcom;
-    private Queue cola2Capcom;
-    private Queue cola3Capcom;
-    private Queue refuerzoCapcom;
+    private Queue cola1StarWars;
+    private Queue cola2StarWars;
+    private Queue cola3StarWars;
+    private Queue refuerzoStarWars;
+    private Queue cola1StarTrek;
+    private Queue cola2StarTrek;
+    private Queue cola3StarTrek;
+    private Queue refuerzoStarTrek;
 
     public Funciones() {
-        this.cola1Nintendo = new Queue();
-        this.cola2Nintendo = new Queue();
-        this.cola3Nintendo = new Queue();
-        this.refuerzoNintendo = new Queue();
-        this.cola1Capcom = new Queue();
-        this.cola2Capcom = new Queue();
-        this.cola3Capcom = new Queue();
-        this.refuerzoCapcom = new Queue();
+        this.cola1StarWars = new Queue();
+        this.cola2StarWars = new Queue();
+        this.cola3StarWars = new Queue();
+        this.refuerzoStarWars = new Queue();
+        this.cola1StarTrek = new Queue();
+        this.cola2StarTrek = new Queue();
+        this.cola3StarTrek = new Queue();
+        this.refuerzoStarTrek = new Queue();
         
     }
     
