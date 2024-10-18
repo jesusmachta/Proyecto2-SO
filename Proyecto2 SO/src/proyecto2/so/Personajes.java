@@ -10,7 +10,7 @@ import java.util.Random;
  *
  * @author jesusmachta
  */
-public class Personajes  {
+public class Personajes {
     private int id;
     private int prioridad;
     private String nombre;
@@ -21,18 +21,66 @@ public class Personajes  {
     private String pathPower;
     private String powerStarWars;
     private String powerStarTrek;
-    
-    private String[] nombresPersonajesStarWars = {"Darth Vader","Luke Skywalker", "Han Solo", "Obi-Wan Kenobi", 
-        "Boba Fett", "Chewbacca","Palpatine","Leia Organa", "Yoda", "R2-D2", "Darth Maul", "Lando Calrissian", "Rey", "General Grievous", "Poe Dameron", "Qui-Gon Jinn", "C-3PO", "Kylo Ren", "Ahsoka Tano", "Padme Amidala"};
-    
-    private String[] nombresPersonajesStarTrek = { "James Tiberius Kirk","Spock", "Jean-Luc Picard","atheryn Janeway","Benjamin Sisko", 
-        "Worf", "Charles Tucker III","Montgomery Scott","Michael Burnham","Jonathan Archer", "Miles O'Brien", "Chakotay", "William Riker","Leonard McCoy","Gul Duk", "Pavel Chekov", "Kira Nerys", "Nyota Uhara", "Data", "Odo"};
-    
-    private String[] pathPersonajesStarWars= {}; //aqui va el path de la imagen png con el nombre de la imagen igual al del nombre del personaje como esta arriba escrito
-    private String[] pathPersonajesStarTrek = {};
-    
-    private String[] powersStarWars = {"", ""};
-    private String[] powersStarTrek = {"",""};
+
+    private String[] nombresPersonajesStarWars = { "Darth Vader", "Luke Skywalker", "Han Solo", "Obi-Wan Kenobi",
+            "Boba Fett", "Chewbacca", "Palpatine", "Leia Organa", "Yoda", "R2-D2", "Darth Maul", "Lando Calrissian",
+            "Rey", "General Grievous", "Poe Dameron", "Qui-Gon Jinn", "C-3PO", "Kylo Ren", "Ahsoka Tano",
+            "Padme Amidala" };
+
+    private String[] nombresPersonajesStarTrek = { "James Tiberius Kirk", "Spock", "Jean-Luc Picard", "atheryn Janeway",
+            "Benjamin Sisko",
+            "Worf", "Charles Tucker III", "Montgomery Scott", "Michael Burnham", "Jonathan Archer", "Miles O'Brien",
+            "Chakotay", "William Riker", "Leonard McCoy", "Gul Duk", "Pavel Chekov", "Kira Nerys", "Nyota Uhara",
+            "Data", "Odo" };
+
+    private String[] pathPersonajesStarWars = {
+            "src//ImgPersonajesStarWars//Darth Vader.png",
+            "src//ImgPersonajesStarWars//Luke Skywalker.png",
+            "src//ImgPersonajesStarWars//Han Solo.png",
+            "src//ImgPersonajesStarWars//Obi-Wan Kenobi.png",
+            "src//ImgPersonajesStarWars//Boba Fett.png",
+            "src//ImgPersonajesStarWars//Chewbacca.png",
+            "src//ImgPersonajesStarWars//Palpatine.png",
+            "src//ImgPersonajesStarWars//Leia Organa.png",
+            "src//ImgPersonajesStarWars//Yoda.png",
+            "src//ImgPersonajesStarWars//R2-D2.png",
+            "src//ImgPersonajesStarWars//Darth Maul.png",
+            "src//ImgPersonajesStarWars//Lando Calrissian.png",
+            "src//ImgPersonajesStarWars//Rey.png",
+            "src//ImgPersonajesStarWars//General Grievous.png",
+            "src//ImgPersonajesStarWars//Poe Dameron.png",
+            "src//ImgPersonajesStarWars//Qui-Gon Jinn.png",
+            "src//ImgPersonajesStarWars//C-3PO.png",
+            "src//ImgPersonajesStarWars//Kylo Ren.png",
+            "src//ImgPersonajesStarWars//Ahsoka Tano.png",
+            "src//ImgPersonajesStarWars//Padme Amidala.png"
+    };
+
+    private String[] pathPersonajesStarTrek = {
+            "src//ImgPersonajesStarTrek//James Tiberius Kirk.png",
+            "src//ImgPersonajesStarTrek//Spock.png",
+            "src//ImgPersonajesStarTrek//Jean-Luc Picard.png",
+            "src//ImgPersonajesStarTrek//Katheryn Janeway.png",
+            "src//ImgPersonajesStarTrek//Benjamin Sisko.png",
+            "src//ImgPersonajesStarTrek//Worf.png",
+            "src//ImgPersonajesStarTrek//Charles Tucker III.png",
+            "src//ImgPersonajesStarTrek//Montgomery Scott.png",
+            "src//ImgPersonajesStarTrek//Michael Burnham.png",
+            "src//ImgPersonajesStarTrek//Jonathan Archer.png",
+            "src//ImgPersonajesStarTrek//Miles O'Brien.png",
+            "src//ImgPersonajesStarTrek//Chakotay.png",
+            "src//ImgPersonajesStarTrek//William Riker.png",
+            "src//ImgPersonajesStarTrek//Leonard McCoy.png",
+            "src//ImgPersonajesStarTrek//Gul Duk.png",
+            "src//ImgPersonajesStarTrek//Pavel Chekov.png",
+            "src//ImgPersonajesStarTrek//Kira Nerys.png",
+            "src//ImgPersonajesStarTrek//Nyota Uhara.png",
+            "src//ImgPersonajesStarTrek//Data.png",
+            "src//ImgPersonajesStarTrek//Odo.png"
+    };
+
+    private String[] powersStarWars = { "Sable", "Pistola" };
+    private String[] powersStarTrek = { "Nave", "Soran" };
     private String power;
     private boolean ganador;
 
@@ -43,131 +91,124 @@ public class Personajes  {
     public void setGanador(boolean ganador) {
         this.ganador = ganador;
     }
-    
 
     public Personajes(int id, String empresa) {
         this.id = id;
-        this.empresa=empresa;
+        this.empresa = empresa;
         this.nombrePersonaje();
         this.sacarEstadisticas();
-        
+
     }
-    
-    public void nombrePersonaje(){
+
+    public void nombrePersonaje() {
         Random random = new Random();
-        int index= random.nextInt(15);
-        
-        if(this.getEmpresa().equals("StarWars")){
-            this.setNombre(this.getNombresPersonajesStarWars()[index]); 
+        int index = random.nextInt(15);
+
+        if (this.getEmpresa().equals("StarWars")) {
+            this.setNombre(this.getNombresPersonajesStarWars()[index]);
             this.setPathImage(this.getPathPersonajesStarWars()[index]);
-           
-            
-        }else{
-            this.setNombre(this.getNombresPersonajesStarTrek()[index]); 
+
+        } else {
+            this.setNombre(this.getNombresPersonajesStarTrek()[index]);
             this.setPathImage(this.getPathPersonajesStarTrek()[index]);
         }
-        
-        
+
     }
-    
-    public void updatePower(){
-        Random random = new Random(); 
-        int index = random.nextInt(2) ;
-//        System.out.println("Random" + index);
-         if(this.getEmpresa().equals("StarWars")){
-             
-             this.setPower(this.getPowersStarWars()[index]); 
-         }else if(this.getEmpresa().equals("StarTrek")){
-             this.setPower(this.getPowersStarTrek()[index]); 
-         }
+
+    public void updatePower() {
+        Random random = new Random();
+        int index = random.nextInt(2);
+        // System.out.println("Random" + index);
+        if (this.getEmpresa().equals("StarWars")) {
+
+            this.setPower(this.getPowersStarWars()[index]);
+        } else if (this.getEmpresa().equals("StarTrek")) {
+            this.setPower(this.getPowersStarTrek()[index]);
+        }
     }
-    
-    public void sacarPrioridad(){
-        int total = 0; 
+
+    public void sacarPrioridad() {
+        int total = 0;
         for (int i = 0; i < this.getEstadisticas().length; i++) {
             total += this.getEstadisticas()[i];
-            
-            
+
         }
-        System.out.println("total"+total);
-        
-        if(total == 4 ||total == 5){
-            this.setPrioridad(3); 
-        }else if(total >= 6 && total <= 8){
-            this.setPrioridad(2); 
-        }else{
-            this.setPrioridad(1); 
+        System.out.println("total" + total);
+
+        if (total == 4 || total == 5) {
+            this.setPrioridad(3);
+        } else if (total >= 6 && total <= 8) {
+            this.setPrioridad(2);
+        } else {
+            this.setPrioridad(1);
         }
     }
-        
-    public void sacarEstadisticas(){
+
+    public void sacarEstadisticas() {
         Random random = new Random();
         double randomValue = random.nextDouble();
-//        System.out.println(randomValue);
-        
+        // System.out.println(randomValue);
+
         this.setEstadisticas(new int[4]);
-//        for (int i=0; i<=3; i++){
-//            
-//        }
-        
+        // for (int i=0; i<=3; i++){
+        //
+        // }
+
         if (randomValue < 0.6) {
-            this.getEstadisticas()[0]= 3;
-           
+            this.getEstadisticas()[0] = 3;
+
         } else if (randomValue < 0.8) {
             this.getEstadisticas()[0] = 1;
         } else {
             this.getEstadisticas()[0] = 2;
         }
-        // ahora 1; 
+        // ahora 1;
         if (randomValue < 0.7) {
-            this.getEstadisticas()[1]= 3;
+            this.getEstadisticas()[1] = 3;
         } else if (randomValue < 0.85) {
             this.getEstadisticas()[1] = 1;
         } else {
             this.getEstadisticas()[1] = 2;
         }
-        // ahora 2; 
-         if (randomValue < 0.5) {
-             this.getEstadisticas()[2]= 3;
+        // ahora 2;
+        if (randomValue < 0.5) {
+            this.getEstadisticas()[2] = 3;
         } else if (randomValue < 0.75) {
             this.getEstadisticas()[2] = 1;
         } else {
             this.getEstadisticas()[2] = 2;
         }
-         // ahora 3; 
-          if (randomValue < 0.4) {
-              this.getEstadisticas()[3]= 3;
+        // ahora 3;
+        if (randomValue < 0.4) {
+            this.getEstadisticas()[3] = 3;
         } else if (randomValue < 0.7) {
             this.getEstadisticas()[3] = 1;
         } else {
             this.getEstadisticas()[3] = 2;
         }
-        
+
         this.sacarPrioridad();
-        
-        
+
     }
-    
-    public void subirPrioridad(){
-      
-        if(this.contadorPrioridad==8){
-            
-             if(this.getPrioridad() ==3){
-              this.setPrioridad(2);
-              
-          }else if(this.getPrioridad()==2){
-              this.setPrioridad(1);
-              
-          }else if(this.getPrioridad()==1){
-              this.setPrioridad(1);
-//              stay
-          }
-            
+
+    public void subirPrioridad() {
+
+        if (this.contadorPrioridad == 8) {
+
+            if (this.getPrioridad() == 3) {
+                this.setPrioridad(2);
+
+            } else if (this.getPrioridad() == 2) {
+                this.setPrioridad(1);
+
+            } else if (this.getPrioridad() == 1) {
+                this.setPrioridad(1);
+                // stay
+            }
+
         }
-       
-         
-         
-  } 
+
+    }
 
     /**
      * @return the id
@@ -407,9 +448,4 @@ public class Personajes  {
         this.power = power;
     }
 
-  
-        
-        
-        
-    }
-
+}

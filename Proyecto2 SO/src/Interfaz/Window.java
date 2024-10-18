@@ -74,8 +74,8 @@ public class Window extends javax.swing.JFrame {
         nombrePersonajeStarTrek = new javax.swing.JLabel();
         idPersonajeStarWars = new javax.swing.JLabel();
         doing = new javax.swing.JLabel();
-        nintendoWL = new javax.swing.JLabel();
-        capcomWL = new javax.swing.JLabel();
+        StarWarsWL = new javax.swing.JLabel();
+        StarTrekWL = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         poderStarWars = new javax.swing.JLabel();
         poderStarTrek = new javax.swing.JLabel();
@@ -163,11 +163,11 @@ public class Window extends javax.swing.JFrame {
         doing.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel2.add(doing, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 100, 30));
 
-        nintendoWL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel2.add(nintendoWL, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, 50, 40));
+        StarWarsWL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(StarWarsWL, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, 50, 40));
 
-        capcomWL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel2.add(capcomWL, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 50, 40));
+        StarTrekWL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(StarTrekWL, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 50, 40));
 
         jLabel13.setFont(new java.awt.Font("Helvetica Neue", 0, 48)); // NOI18N
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Vs.png"))); // NOI18N
@@ -602,9 +602,10 @@ public class Window extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JLabel PeleaStarTrek;
     public javax.swing.JLabel PeleaStarWars;
+    public javax.swing.JLabel StarTrekWL;
+    public javax.swing.JLabel StarWarsWL;
     public javax.swing.JLabel cantGanadoresStarTrek;
     public javax.swing.JLabel cantGanadoresStarWars;
-    public javax.swing.JLabel capcomWL;
     public javax.swing.JTextArea colaStarTrek1;
     public javax.swing.JTextArea colaStarTrek2;
     public javax.swing.JTextArea colaStarTrek3;
@@ -655,7 +656,6 @@ public class Window extends javax.swing.JFrame {
     public javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
-    public javax.swing.JLabel nintendoWL;
     public javax.swing.JLabel nombrePersonajeStarTrek;
     public javax.swing.JLabel nombrePersonajeStarWars;
     public javax.swing.JLabel poderStarTrek;

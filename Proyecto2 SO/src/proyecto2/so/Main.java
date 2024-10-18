@@ -13,12 +13,9 @@ import Interfaz.Window;
  */
 public final class Main {
     public static Admin admin= new Admin();
+    public static IA ia= new IA(10);
     public static Window w;
 
-   
-    
-    
-    
 
     /**
      * @param args the command line arguments

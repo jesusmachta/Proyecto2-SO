@@ -188,7 +188,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="nintendoWL">
+            <Component class="javax.swing.JLabel" name="StarWarsWL">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
               </Properties>
@@ -201,7 +201,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="capcomWL">
+            <Component class="javax.swing.JLabel" name="StarTrekWL">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
               </Properties>
