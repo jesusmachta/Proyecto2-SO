@@ -102,7 +102,7 @@ public class Personajes {
 
     public void nombrePersonaje() {
         Random random = new Random();
-        int index = random.nextInt(15);
+        int index = random.nextInt(20);
 
         if (this.getEmpresa().equals("StarWars")) {
             this.setNombre(this.getNombresPersonajesStarWars()[index]);
