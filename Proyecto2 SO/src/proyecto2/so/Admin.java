@@ -221,7 +221,7 @@ public class Admin extends Thread{
          this.setContadorStarTrek(this.revisarColasVacias(getCola2StarTrek(), 2, getContadorStarTrek(), "StarTrek"));
          this.setContadorStarTrek(this.revisarColasVacias(getCola3StarTrek(), 3, getContadorStarTrek(), "StarTrek"));
          
-         // nintendo
+         // Star Wars
          this.setContadorStarWars(this.revisarColasVacias(getCola1StarWars(), 1, getContadorStarWars(), "StarWars")); 
          this.setContadorStarWars(this.revisarColasVacias(getCola2StarWars(), 2, getContadorStarWars(), "StarWars")); 
          this.setContadorStarWars(this.revisarColasVacias(getCola3StarWars(), 3, getContadorStarWars(), "StarWars")); 
