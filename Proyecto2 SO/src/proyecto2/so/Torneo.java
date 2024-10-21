@@ -6,7 +6,7 @@ package proyecto2.so;
 
 /**
  *
- * @author jesusmachta
+ * @author jesusmachta & andreapinto
  */
 public class Torneo {
     private Personajes pStarWars;

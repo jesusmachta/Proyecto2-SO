@@ -15,7 +15,7 @@ import static proyecto2.so.Main.w;
 
 /**
  *
- * @author jesusmachta
+ * @author jesusmachta & andreapinto
  * 
  */
 public class Admin extends Thread{

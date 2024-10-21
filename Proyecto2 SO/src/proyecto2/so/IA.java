@@ -14,7 +14,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author jesusmachta
+ * @author jesusmachta & andreapinto
  */
 public class IA extends Thread {
 

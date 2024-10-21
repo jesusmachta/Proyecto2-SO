@@ -9,7 +9,7 @@ import Interfaz.Window;
 
 /**
  *
- * @author jesusmachta
+ * @author jesusmachta & andreapinto
  */
 public final class Main {
     public static Admin admin= new Admin();

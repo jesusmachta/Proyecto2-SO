@@ -8,7 +8,7 @@ import java.util.Random;
 
 /**
  *
- * @author jesusmachta
+ * @author jesusmachta & andreapinto
  */
 public class Personajes {
     private int id;
