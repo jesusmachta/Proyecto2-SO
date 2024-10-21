@@ -401,7 +401,6 @@ public class IA extends Thread {
                 ((Personajes) aux3.getData()).setContadorPrioridad(0);
 
                 main.admin.getCola2StarWars().enqueue(aux3.getData());
-                // main.admin.getCola2Nintendo().enqueue(aux3.getData());
 
                 main.admin.getCola3StarWars().dequeue();
 
