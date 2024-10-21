@@ -162,7 +162,7 @@ public class Admin extends Thread{
     public void crearPersonajes() throws InterruptedException{
         System.out.println("FALGGGGG 1");
         //StarWars
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 20; i++) {
             Personajes p = new Personajes(getContadorStarWars(), "StarWars"); 
 //            this.contadorStarWars ++; 
             System.out.println(p.getNombre());
@@ -183,7 +183,7 @@ public class Admin extends Thread{
         
         
         // StarTrek 
-         for (int i = 0; i < 10; i++) {
+         for (int i = 0; i < 20; i++) {
             Personajes pe = new Personajes(getContadorStarTrek(), "StarTrek");
 //            this.contadorStarTrek++; 
             main.admin.mutex.acquire();
