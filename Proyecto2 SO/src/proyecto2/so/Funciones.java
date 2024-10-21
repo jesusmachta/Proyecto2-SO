@@ -8,7 +8,7 @@ import Estructuras.Queue;
 
 /**
  *
- * @author jesusmachta & andreapinto
+ * @author jesusmachta & andreapinto & andrespaz
  */
 public class Funciones {
     
